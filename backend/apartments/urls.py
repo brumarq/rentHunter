@@ -5,6 +5,6 @@ from rest_framework import routers
 from .views import *
 
 router = routers.DefaultRouter()
-router.register('apartments', ApartmentsViewSet)
+router.register('apartmentss', ApartmentsViewSet)
 
 urlpatterns = router.urls
