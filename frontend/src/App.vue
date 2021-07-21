@@ -1,36 +1,25 @@
 <template>
   <div id="app">
-    <table>
-      <thead>
-        <th>Title</th>
-        <th>Price</th>
-      </thead>
-      <tbody>
-        <tr v-for="apartment in apartments" :key="apartment.id">
-          <td>{{ apartment.title }}</td>
-          <td>{{ apartment.price }}</td>
-        </tr>
-      </tbody>
-    </table>
+    <Apartments />
   </div>
 </template>
 
 <script>
+import Apartments from './components/Apartments'
+
 export default {
   name: "App",
-  data() {
-    return {
-      apartments: [],
-    };
+  components: {
+    Apartments,
   },
-  async created(){
-    var response = await fetch('http://127.0.0.1:8000/api/apartments/');
-    this.apartments = await response.json();
-  }
 };
 </script>
 
+<style src="./assets/tailwind.css"/>
 <style>
+body {
+  background-image: url('https://images.unsplash.com/photo-1496163290419-406e5dd84a07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
