@@ -1,19 +1,33 @@
 <template>
   <div id="app">
-    {{ msg }}
+    <table>
+      <thead>
+        <th>Title</th>
+        <th>Price</th>
+      </thead>
+      <tbody>
+        <tr v-for="apartment in apartments" :key="apartment.id">
+          <td>{{ apartment.title }}</td>
+          <td>{{ apartment.price }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'App',
-  data(){
+  name: "App",
+  data() {
     return {
-      msg: 'hello world '
-    }
+      apartments: [],
+    };
+  },
+  async created(){
+    var response = await fetch('http://127.0.0.1:8000/api/apartments/');
+    this.apartments = await response.json();
   }
-}
+};
 </script>
 
 <style>
