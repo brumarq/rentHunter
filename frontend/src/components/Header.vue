@@ -1,21 +1,30 @@
 <template>
-  <nav class="inset-x-0 top-0 bg-white shadow-lg">
-    <div class="md:flex items-center justify-between py-2 px-8 md:px-12">
+  <nav class="inset-x-0 h-20 top-0 bg-white ">
+    <div class="md:flex items-center justify-between py-6 px-10 md:px-12">
       <div class="flex justify-between items-center">
         <div class="text-2xl font-bold text-gray-800 md:text-3xl">
-          <a href="#">RentHunter</a>
+          <img
+            class="object-contain h-10"
+            src="../assets/logo_rentHunter.png"
+          />
         </div>
-        <div>
-            <a
-          href="#"
-          class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
-          >Apartments</a
-        >
-        <a
-          href="#"
-          class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
-          >Houses</a
-        >
+        <div class="pl-12">
+          <a
+            href="#"
+            class="text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
+            >Apartments</a
+          >
+          <a
+            href="#"
+            class="ml-8 text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
+            >Houses</a
+          >
+
+          <a
+            href="#"
+            class="ml-8 text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
+            >Data</a
+          >
         </div>
       </div>
     </div>
