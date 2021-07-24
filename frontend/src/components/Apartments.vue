@@ -33,63 +33,31 @@
       </form>
     </div>
     <div class="col-start-4 col-end-9 h-full">
-      <div
-        class=" container  max-w-md w-full bg-gray-900 shadow-lg rounded-xl p-6"
-      >
-        <div class="relative h-62 w-full mb-3">
-          <img
-            src="https://casco-media-prod.global.ssl.fastly.net/7b79bf78-62c4-5bc9-bfa3-df2adfd37e81/ea86a8907ddcc6f4af6445536e381ecf.jpg?width=600&auto=webp"
-            alt="Just a flower"
-            class="w-full object-fill rounded-2xl"
-          />
-        </div>
-        <div class="flex-auto justify-evenly">
-          <div class="flex flex-wrap">
-            <div
-              class="w-full flex-none text-sm flex items-center text-gray-600"
-            >
-              <span class="mr-2 text-gray-400">Amsterdam</span>
+      <div class="max-w-sm  w-full lg:max-w-full lg:flex shadow-md ">
+        <div
+          class="h-full lg:h-auto lg:w-64 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+          style="background-image: url('https://casco-media-prod.global.ssl.fastly.net/7b79bf78-62c4-5bc9-bfa3-df2adfd37e81/ea86a8907ddcc6f4af6445536e381ecf.jpg?width=600&auto=webp')"
+          title="Woman holding a mug"
+        ></div>
+        <div
+          class="border-r border-b border-l lg:border-l-0 lg:border-t  bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal"
+        >
+          <div class="mb-8">
+            
+            <div class="text-gray-900 font-bold text-xl mb-2">
+              Can coffee make you a better developer?
             </div>
-            <div class="flex items-center w-full justify-between min-w-0">
-              <h2
-                class="
-                    text-lg
-                    mr-auto
-                    cursor-pointer
-                    text-gray-200
-                    hover:text-purple-500
-                    truncate
-                  "
-              >
-                Apartment Bloemgracht 124 E
-              </h2>
-            </div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
           </div>
-          <div class="text-xl text-white font-semibold mt-1">$240.00</div>
-          <div class="flex space-x-2 text-sm font-medium justify-start">
-            <button
-              class="
-                  transition
-                  ease-in
-                  duration-300
-                  inline-flex
-                  items-center
-                  text-sm
-                  font-medium
-                  mb-2
-                  md:mb-0
-                  bg-purple-500
-                  px-5
-                  py-2
-                  hover:shadow-lg
-                  tracking-wider
-                  text-white
-                  rounded-full
-                  hover:bg-purple-600
-                "
-            >
-              <span>More</span>
-            </button>
+          <div class="flex items-center">
+            <div class="text-sm">
+              <p class="text-gray-900 leading-none">Jonathan Reinink</p>
+              <p class="text-gray-600">Aug 18</p>
+            </div>
           </div>
         </div>
       </div>
