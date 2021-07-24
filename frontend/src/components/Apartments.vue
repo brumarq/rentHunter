@@ -1,7 +1,41 @@
 <template>
-  <div class="container">
-    <div class="max-w-md w-full bg-gray-900 shadow-lg rounded-xl p-6">
-      <div class="flex flex-col">
+  <div class="grid grid-cols-9 gap-10 ">
+    <div class="col-start-2 col-end-4">
+      <form class="bg-white shadow-md px-8 pt-6 pb-8 mb-4">
+        <div class="mb-4">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="username"
+          >
+            City Name
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="username"
+            type="text"
+            placeholder="Username"
+          />
+        </div>
+        <div class="mb-6">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="password"
+          >
+            Place
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="username"
+            type="text"
+            placeholder="Username"
+          />
+        </div>
+      </form>
+    </div>
+    <div class="col-start-4 col-end-9 h-full">
+      <div
+        class=" container  max-w-md w-full bg-gray-900 shadow-lg rounded-xl p-6"
+      >
         <div class="relative h-62 w-full mb-3">
           <img
             src="https://casco-media-prod.global.ssl.fastly.net/7b79bf78-62c4-5bc9-bfa3-df2adfd37e81/ea86a8907ddcc6f4af6445536e381ecf.jpg?width=600&auto=webp"
@@ -75,10 +109,10 @@ export default {
       apartments: [],
     };
   },
-  async created(){
-    var response = await fetch('http://127.0.0.1:8000/api/apartments/');
+  async created() {
+    var response = await fetch("http://127.0.0.1:8000/api/apartments/");
     this.apartments = await response.json();
-  }
+  },
 };
 </script>
 
