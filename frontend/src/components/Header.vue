@@ -23,7 +23,7 @@
           <a
             href="#"
             class="ml-8 text-gray-800 rounded hover:bg-gray-900 hover:text-gray-100 hover:font-medium py-2 px-2 md:mx-2"
-            >Data</a
+            >Data test</a
           >
         </div>
       </div>
